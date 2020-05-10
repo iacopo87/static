@@ -5,7 +5,7 @@ pipeline {
               steps {
                   withAWS(region:'us-east-1',credentials:'aws-static') {
                   sh 'echo "Uploading content with AWS creds"'
-                      s3Upload(pathStyleAccessEnabled: true, payloadSigningEnabled: true, file:'index.html', bucket:'udacity-devops-pazzaglia2')
+                      s3Upload(pathStyleAccessEnabled: true, payloadSigningEnabled: true, file:'index.html', bucket:'udacity-devops-pazzaglia3')
                   }
               }
         }
